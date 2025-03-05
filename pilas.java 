@@ -1,0 +1,25 @@
+import java.util.Stack;
+
+public class pilasN {
+    public static void main(String[] args) {
+        int n = 5; 
+        Stack<Integer>[] pilas = new Stack[n];
+        
+        for (int i = 0; i < n; i++) {
+            pilas[i] = new Stack<>();
+        }
+        
+        pilas[0].push(23);
+        pilas[1].push(22);
+        pilas[2].push(7);
+        pilas[2].pop();
+        pilas[1].pop();
+
+        //Contenido de cada pila
+        for (int i = 0; i < n; i++) {
+            System.out.println("Pila " + i + ": " + pilas[i]);
+        }
+        
+        
+    }
+}
